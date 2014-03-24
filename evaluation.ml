@@ -98,6 +98,5 @@ let eval = fun env p ->
 	  ((x, v)::env, Liaison (x, v))
     | Expr e -> 
       let v = eval_expr env e in
-   
       (env,v)
     | Vide -> (env, Aucune)
